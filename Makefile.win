@@ -1,0 +1,82 @@
+# Project: asignacion_ejemplo
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = cout.cin.o endlduro.o return.o suma_de_dos_numeros.o expresiones,cpp.o condicionales.o for.o while.o "do\ while.o" arreglos.o switch.o while2.o condicional2.o objetos.o objetos1.o sobrecarga_poo.o destructor_objetos.o metodos_poo.o herencia(POO).o
+LINKOBJ  = cout.cin.o endlduro.o return.o suma_de_dos_numeros.o expresiones,cpp.o condicionales.o for.o while.o "do while.o" arreglos.o switch.o while2.o condicional2.o objetos.o objetos1.o sobrecarga_poo.o destructor_objetos.o metodos_poo.o herencia(POO).o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = asignacion_ejemplo.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+cout.cin.o: cout.cin.cpp
+	$(CPP) -c cout.cin.cpp -o cout.cin.o $(CXXFLAGS)
+
+endlduro.o: endlduro.cpp
+	$(CPP) -c endlduro.cpp -o endlduro.o $(CXXFLAGS)
+
+return.o: return.cpp
+	$(CPP) -c return.cpp -o return.o $(CXXFLAGS)
+
+suma_de_dos_numeros.o: suma_de_dos_numeros.cpp
+	$(CPP) -c suma_de_dos_numeros.cpp -o suma_de_dos_numeros.o $(CXXFLAGS)
+
+expresiones,cpp.o: expresiones,cpp.cpp
+	$(CPP) -c expresiones,cpp.cpp -o expresiones,cpp.o $(CXXFLAGS)
+
+condicionales.o: condicionales.cpp
+	$(CPP) -c condicionales.cpp -o condicionales.o $(CXXFLAGS)
+
+for.o: for.cpp
+	$(CPP) -c for.cpp -o for.o $(CXXFLAGS)
+
+while.o: while.cpp
+	$(CPP) -c while.cpp -o while.o $(CXXFLAGS)
+
+"do\ while.o": do\ while.cpp
+	$(CPP) -c "do while.cpp" -o "do while.o" $(CXXFLAGS)
+
+arreglos.o: arreglos.cpp
+	$(CPP) -c arreglos.cpp -o arreglos.o $(CXXFLAGS)
+
+switch.o: switch.cpp
+	$(CPP) -c switch.cpp -o switch.o $(CXXFLAGS)
+
+while2.o: while2.cpp
+	$(CPP) -c while2.cpp -o while2.o $(CXXFLAGS)
+
+condicional2.o: condicional2.cpp
+	$(CPP) -c condicional2.cpp -o condicional2.o $(CXXFLAGS)
+
+objetos.o: objetos.cpp
+	$(CPP) -c objetos.cpp -o objetos.o $(CXXFLAGS)
+
+objetos1.o: objetos1.cpp
+	$(CPP) -c objetos1.cpp -o objetos1.o $(CXXFLAGS)
+
+sobrecarga_poo.o: sobrecarga_poo.cpp
+	$(CPP) -c sobrecarga_poo.cpp -o sobrecarga_poo.o $(CXXFLAGS)
+
+destructor_objetos.o: destructor_objetos.cpp
+	$(CPP) -c destructor_objetos.cpp -o destructor_objetos.o $(CXXFLAGS)
+
+metodos_poo.o: metodos_poo.cpp
+	$(CPP) -c metodos_poo.cpp -o metodos_poo.o $(CXXFLAGS)
+
+herencia(POO).o: herencia(POO).cpp
+	$(CPP) -c herencia(POO).cpp -o herencia(POO).o $(CXXFLAGS)

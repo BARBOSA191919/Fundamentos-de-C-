@@ -1,0 +1,17 @@
+/* la setencia for
+
+for(expr1;expresion logica;expr2){
+       conjunto de instrucciones;
+   }
+   */
+   // realice un programa que calcule y muestre
+   //la salida estandar la suma de los cuadrados de los 10 primeros
+   //enteros mayores que cero.*/
+   
+   #include<iostream>
+   using namespace std;
+   
+   int main (){
+   	int suma=0,cuadrado;
+   	
+   	for

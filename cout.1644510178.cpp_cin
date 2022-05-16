@@ -1,0 +1,30 @@
+#include <iostream>
+
+#include <cstdlib>
+
+
+
+using namespace std;
+
+
+
+char texto[100];
+
+
+
+int main(){
+
+
+
+cout << "Introduzca un texto" << endl;
+
+cin.getline(texto,100); 
+
+cout << "El texto escrito es: " << texto << endl;
+
+
+
+system("pause");
+
+}
+
